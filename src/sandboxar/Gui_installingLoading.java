@@ -27,23 +27,23 @@ public class Gui_installingLoading extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        Text1 = new javax.swing.JLabel();
+        Text2 = new javax.swing.JLabel();
+        LoadingGIF = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel1.setText("Installing...");
-        jLabel1.setMaximumSize(new java.awt.Dimension(96, 16));
-        jLabel1.setMinimumSize(new java.awt.Dimension(96, 16));
-        jLabel1.setPreferredSize(new java.awt.Dimension(96, 16));
+        Text1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Text1.setText("Installing...");
+        Text1.setMaximumSize(new java.awt.Dimension(96, 16));
+        Text1.setMinimumSize(new java.awt.Dimension(96, 16));
+        Text1.setPreferredSize(new java.awt.Dimension(96, 16));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel2.setText("Please be patient");
+        Text2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Text2.setText("Please be patient");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sandboxar/assets/loading_bar.gif"))); // NOI18N
+        LoadingGIF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sandboxar/assets/loading_bar.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -54,22 +54,22 @@ public class Gui_installingLoading extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2)))
+                            .addComponent(Text1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Text2)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(128, 128, 128)
-                        .addComponent(jLabel3)))
+                        .addComponent(LoadingGIF)))
                 .addContainerGap(141, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(27, 27, 27)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Text1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
+                .addComponent(Text2)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel3)
+                .addComponent(LoadingGIF)
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
@@ -118,9 +118,9 @@ public class Gui_installingLoading extends javax.swing.JFrame {
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel LoadingGIF;
+    private javax.swing.JLabel Text1;
+    private javax.swing.JLabel Text2;
     // End of variables declaration//GEN-END:variables
 
 }
