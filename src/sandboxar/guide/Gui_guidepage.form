@@ -42,9 +42,9 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <Component id="GuideHyperlink" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="455" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
-          <Component id="jScrollPane1" max="32767" attributes="0"/>
+          <Component id="jScrollPane1" pref="658" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -61,7 +61,7 @@
     <Component class="javax.swing.JButton" name="GuideHyperlink">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Ubuntu" size="12" style="0"/>
+          <Font name="Tahoma" size="12" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Original guide by Oliver Kreylos"/>
         <Property name="borderPainted" type="boolean" value="false"/>
@@ -77,6 +77,9 @@
         <Component class="javax.swing.JTextArea" name="Howto">
           <Properties>
             <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="12" style="0"/>
+            </Property>
             <Property name="rows" type="int" value="5"/>
             <Property name="text" type="java.lang.String" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#xa;Nullam in velit non urna commodo semper.&#xa;Nunc laoreet diam eget dolor rutrum finibus.&#xa;Vivamus quis lectus at risus pharetra rutrum.&#xa;In auctor dui nec nunc pellentesque, sit amet rhoncus arcu pulvinar.&#xa;Maecenas dignissim dui ut sem tincidunt efficitur.&#xa;Duis eu mauris sit amet dui varius molestie.&#xa;Pellentesque vitae leo sit amet ex imperdiet dapibus id vel enim.&#xa;Donec a velit semper turpis tincidunt lacinia vitae sit amet enim.&#xa;Sed lobortis urna elementum molestie ullamcorper.&#xa;Maecenas feugiat metus et elit viverra consectetur.&#xa;Maecenas ut velit nec mi volutpat varius sed in ipsum.&#xa;Nunc consequat augue quis hendrerit convallis.&#xa;Sed sed libero mattis, pharetra dolor a, aliquam arcu.&#xa;Sed non neque vel nulla dapibus laoreet non non magna.&#xa;Nunc congue nisi et auctor scelerisque.&#xa;Praesent eu nulla eu massa mattis eleifend.&#xa;Aenean nec dolor eu leo euismod faucibus.&#xa;Aliquam ac orci ultricies, laoreet tortor ut, suscipit justo.&#xa;Quisque molestie lacus ac semper semper.&#xa;Vestibulum pretium velit laoreet tortor feugiat porta.&#xa;Praesent et lectus sit amet odio dictum venenatis a vel sapien.&#xa;Donec elementum risus vel justo accumsan, eu cursus sem placerat.&#xa;Donec mattis nisi sed condimentum malesuada.&#xa;Sed nec eros et nulla pulvinar luctus eu ut quam.&#xa;Nam vitae felis in lacus mattis malesuada.&#xa;Proin vel nulla auctor, blandit lacus ac, venenatis nulla.&#xa;Sed in lectus consectetur, egestas nulla et, tempus leo.&#xa;Sed bibendum libero non varius scelerisque.&#xa;Phasellus gravida odio sit amet leo consequat, non aliquet sapien tempor.&#xa;Sed vel lectus vel quam luctus faucibus.&#xa;Nam vel est ut lacus imperdiet imperdiet.&#xa;Mauris in nisi ac est vestibulum dignissim eu vitae nulla.&#xa;Cras id libero sit amet orci fermentum rutrum.&#xa;Nunc aliquet erat quis libero scelerisque, a pretium urna blandit.&#xa;Ut ornare sapien sit amet sem fringilla malesuada.&#xa;Aenean ac lacus nec velit tempus viverra non non enim.&#xa;Duis dictum leo et ante auctor porttitor.&#xa;Nunc molestie enim at augue pretium, nec efficitur nisl interdum.&#xa;Aenean quis urna posuere, scelerisque nibh quis, condimentum augue.&#xa;Sed vehicula leo ut viverra lacinia.&#xa;Donec id sem quis ligula tincidunt imperdiet.&#xa;Aliquam cursus diam vitae eros viverra, vitae vestibulum arcu ultricies.&#xa;Ut mattis mi vitae convallis tempus.&#xa;In sit amet ipsum venenatis, finibus nisi vitae, pulvinar orci.&#xa;Cras sit amet libero in est sagittis imperdiet quis in risus.&#xa;Quisque vehicula ligula vel lectus bibendum cursus.&#xa;Morbi vel neque non est imperdiet dapibus.&#xa;Donec id nisi facilisis dui molestie auctor at sit amet tellus.&#xa;Fusce vitae velit a arcu sodales scelerisque.&#xa;Vivamus tempor nisi in risus scelerisque, sed sodales sem aliquet.&#xa;Fusce luctus quam non est facilisis auctor.&#xa;Pellentesque convallis felis ut ullamcorper fringilla.&#xa;Vestibulum euismod lectus vel risus laoreet tristique ac id augue.&#xa;Integer consectetur velit luctus malesuada pellentesque.&#xa;Aenean et sapien eget tortor faucibus cursus.&#xa;Integer dignissim turpis ac diam interdum rutrum.&#xa;In eget nunc vitae odio tincidunt feugiat eget sagittis augue.&#xa;Vivamus feugiat dolor id libero pulvinar consequat.&#xa;Nulla molestie magna nec bibendum scelerisque.&#xa;Aenean dictum quam id nibh dictum rutrum.&#xa;Fusce at lorem vulputate, hendrerit nulla in, pulvinar elit.&#xa;Praesent tempor mi a diam tempor laoreet.&#xa;Mauris convallis ipsum eu lacus convallis euismod id auctor neque.&#xa;Praesent euismod dolor in orci accumsan, ut maximus eros tristique."/>
           </Properties>
