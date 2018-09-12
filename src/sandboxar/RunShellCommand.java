@@ -40,6 +40,7 @@ public class RunShellCommand {
         try {
 	        String ss = null;
 	        String runcommand = home + "/src/SARndbox-2.3/bin/SARndbox" + " " + checkboxes + " " + textfields + " " + buttons;
+                runcommand = runcommand.replace("null", "");
 	        System.out.println(runcommand);
 	        Process p = Runtime.getRuntime().exec(runcommand); //Change path to test error
 	        BufferedWriter writeer = new BufferedWriter(new OutputStreamWriter(p.getOutputStream()));
