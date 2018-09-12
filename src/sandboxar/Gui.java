@@ -19,6 +19,7 @@ public class Gui {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws InstantiationException, ClassNotFoundException, IllegalAccessException, UnsupportedLookAndFeelException {
+        //Checking if options.txt exist to prevent the 'Firt time opening' pop-up from popping up
         File f = new File(home + "/.ARSandboxTool/options.txt");
         if(f.exists() && !f.isDirectory()) 
         { 
