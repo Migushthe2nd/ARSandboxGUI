@@ -20,6 +20,7 @@ public final class Gui_run extends JFrame {
 public static String Suhm, Sfpv, Suhs, Sus, Sncl, Srws, Srwt, Sc, Sf, Ss, Sslf, Ser, Shmp, Snas, Ssp, She, Swts, Sws, Srer, Srs, Sevr, Sdds, Swi, Swo, Scp;
 public static String Tuhm, Tfpv, Tc, Tf, Ts, Tslf, Ter, Thmp, Tnas, Tsp, The, Twts, Tws, Trer, Trs, Tevr, Tdds, Twi, Two, Tcp;
 static String home = System.getProperty("user.home");
+
 	
 	JCheckBox CBuhm, CBfpv, CBuhs, CBus, CBncl, CBrws, CBrwt, CBc, CBf, CBs, CBslf, CBer, CBhmp, CBnas, CBsp, CBhe, CBwts, CBws, CBrer, CBrs, CBevr, CBdds, CBwi, CBwo, CBcp; 
 	JTextField TFuhm, TFfpv, TFc, TFf, TFs, TFslf, TFer, TFhmp, TFnas, TFsp, TFhe, TFwts, TFws, TFrer, TFrs, TFevr, TFdds, TFwi, TFwo, TFcp;
