@@ -32,6 +32,7 @@ public class AlreadyInstalledLocationConfirmation extends javax.swing.JFrame {
         OK = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         Text1.setText("Assuming you have ARSandbox installed in the default location: (/home/src),");
 
