@@ -28,37 +28,37 @@ public class Gui_install extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        title = new javax.swing.JLabel();
+        OldInstall = new javax.swing.JButton();
+        NewInstall = new javax.swing.JButton();
+        introtext = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setName("mainframe"); // NOI18N
 
-        jLabel1.setText("ARSandbox install utility");
+        title.setText("ARSandbox install utility");
 
-        jButton2.setText("I have already installed ARSandbox");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        OldInstall.setText("I have already installed ARSandbox");
+        OldInstall.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                OldInstallActionPerformed(evt);
             }
         });
 
-        jButton3.setText("I want to (re)install ARSandbox");
-        jButton3.addChangeListener(new javax.swing.event.ChangeListener() {
+        NewInstall.setText("I want to (re)install ARSandbox");
+        NewInstall.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                jButton3StateChanged(evt);
+                NewInstallStateChanged(evt);
             }
         });
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        NewInstall.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                NewInstallActionPerformed(evt);
             }
         });
 
-        jLabel2.setText("This program was made to make installing and running ARSandbox and its dependencies easier.");
+        introtext.setText("This simple Java GUI was made to make installing and running ARSandbox and its dependencies easier.");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -67,47 +67,48 @@ public class Gui_install extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
+                    .addComponent(title)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(OldInstall, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(NewInstall, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addComponent(introtext)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(6, 6, 6)
-                .addComponent(jLabel1)
+                .addComponent(title)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
+                .addComponent(introtext)
                 .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(NewInstall)
+                    .addComponent(OldInstall, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void OldInstallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OldInstallActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+        sandboxar.AlreadyInstalledLocationConfirmation.main(null);
+    }//GEN-LAST:event_OldInstallActionPerformed
 
-    private void jButton3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jButton3StateChanged
+    private void NewInstallStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_NewInstallStateChanged
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3StateChanged
+    }//GEN-LAST:event_NewInstallStateChanged
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void NewInstallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NewInstallActionPerformed
         // TODO add your handling code here:
         
         sandboxar.Gui_enterpasswd.main(null);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_NewInstallActionPerformed
 
     /**
      * @param args the command line arguments
@@ -147,9 +148,9 @@ public class Gui_install extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton NewInstall;
+    private javax.swing.JButton OldInstall;
+    private javax.swing.JLabel introtext;
+    private javax.swing.JLabel title;
     // End of variables declaration//GEN-END:variables
 }
