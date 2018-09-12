@@ -38,9 +38,9 @@ public class Gui_guidepage extends javax.swing.JFrame {
     private void initComponents() {
 
         jFrame1 = new javax.swing.JFrame();
-        jButton3 = new javax.swing.JButton();
+        GuideHyperlink = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        Howto = new javax.swing.JTextArea();
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
@@ -55,26 +55,26 @@ public class Gui_guidepage extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton3.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
-        jButton3.setText("Original guide by Oliver Kreylos");
-        jButton3.setBorderPainted(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        GuideHyperlink.setFont(new java.awt.Font("Ubuntu", 0, 12)); // NOI18N
+        GuideHyperlink.setText("Original guide by Oliver Kreylos");
+        GuideHyperlink.setBorderPainted(false);
+        GuideHyperlink.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                GuideHyperlinkActionPerformed(evt);
             }
         });
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit.\nNullam in velit non urna commodo semper.\nNunc laoreet diam eget dolor rutrum finibus.\nVivamus quis lectus at risus pharetra rutrum.\nIn auctor dui nec nunc pellentesque, sit amet rhoncus arcu pulvinar.\nMaecenas dignissim dui ut sem tincidunt efficitur.\nDuis eu mauris sit amet dui varius molestie.\nPellentesque vitae leo sit amet ex imperdiet dapibus id vel enim.\nDonec a velit semper turpis tincidunt lacinia vitae sit amet enim.\nSed lobortis urna elementum molestie ullamcorper.\nMaecenas feugiat metus et elit viverra consectetur.\nMaecenas ut velit nec mi volutpat varius sed in ipsum.\nNunc consequat augue quis hendrerit convallis.\nSed sed libero mattis, pharetra dolor a, aliquam arcu.\nSed non neque vel nulla dapibus laoreet non non magna.\nNunc congue nisi et auctor scelerisque.\nPraesent eu nulla eu massa mattis eleifend.\nAenean nec dolor eu leo euismod faucibus.\nAliquam ac orci ultricies, laoreet tortor ut, suscipit justo.\nQuisque molestie lacus ac semper semper.\nVestibulum pretium velit laoreet tortor feugiat porta.\nPraesent et lectus sit amet odio dictum venenatis a vel sapien.\nDonec elementum risus vel justo accumsan, eu cursus sem placerat.\nDonec mattis nisi sed condimentum malesuada.\nSed nec eros et nulla pulvinar luctus eu ut quam.\nNam vitae felis in lacus mattis malesuada.\nProin vel nulla auctor, blandit lacus ac, venenatis nulla.\nSed in lectus consectetur, egestas nulla et, tempus leo.\nSed bibendum libero non varius scelerisque.\nPhasellus gravida odio sit amet leo consequat, non aliquet sapien tempor.\nSed vel lectus vel quam luctus faucibus.\nNam vel est ut lacus imperdiet imperdiet.\nMauris in nisi ac est vestibulum dignissim eu vitae nulla.\nCras id libero sit amet orci fermentum rutrum.\nNunc aliquet erat quis libero scelerisque, a pretium urna blandit.\nUt ornare sapien sit amet sem fringilla malesuada.\nAenean ac lacus nec velit tempus viverra non non enim.\nDuis dictum leo et ante auctor porttitor.\nNunc molestie enim at augue pretium, nec efficitur nisl interdum.\nAenean quis urna posuere, scelerisque nibh quis, condimentum augue.\nSed vehicula leo ut viverra lacinia.\nDonec id sem quis ligula tincidunt imperdiet.\nAliquam cursus diam vitae eros viverra, vitae vestibulum arcu ultricies.\nUt mattis mi vitae convallis tempus.\nIn sit amet ipsum venenatis, finibus nisi vitae, pulvinar orci.\nCras sit amet libero in est sagittis imperdiet quis in risus.\nQuisque vehicula ligula vel lectus bibendum cursus.\nMorbi vel neque non est imperdiet dapibus.\nDonec id nisi facilisis dui molestie auctor at sit amet tellus.\nFusce vitae velit a arcu sodales scelerisque.\nVivamus tempor nisi in risus scelerisque, sed sodales sem aliquet.\nFusce luctus quam non est facilisis auctor.\nPellentesque convallis felis ut ullamcorper fringilla.\nVestibulum euismod lectus vel risus laoreet tristique ac id augue.\nInteger consectetur velit luctus malesuada pellentesque.\nAenean et sapien eget tortor faucibus cursus.\nInteger dignissim turpis ac diam interdum rutrum.\nIn eget nunc vitae odio tincidunt feugiat eget sagittis augue.\nVivamus feugiat dolor id libero pulvinar consequat.\nNulla molestie magna nec bibendum scelerisque.\nAenean dictum quam id nibh dictum rutrum.\nFusce at lorem vulputate, hendrerit nulla in, pulvinar elit.\nPraesent tempor mi a diam tempor laoreet.\nMauris convallis ipsum eu lacus convallis euismod id auctor neque.\nPraesent euismod dolor in orci accumsan, ut maximus eros tristique.");
-        jScrollPane1.setViewportView(jTextArea1);
+        Howto.setColumns(20);
+        Howto.setRows(5);
+        Howto.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit.\nNullam in velit non urna commodo semper.\nNunc laoreet diam eget dolor rutrum finibus.\nVivamus quis lectus at risus pharetra rutrum.\nIn auctor dui nec nunc pellentesque, sit amet rhoncus arcu pulvinar.\nMaecenas dignissim dui ut sem tincidunt efficitur.\nDuis eu mauris sit amet dui varius molestie.\nPellentesque vitae leo sit amet ex imperdiet dapibus id vel enim.\nDonec a velit semper turpis tincidunt lacinia vitae sit amet enim.\nSed lobortis urna elementum molestie ullamcorper.\nMaecenas feugiat metus et elit viverra consectetur.\nMaecenas ut velit nec mi volutpat varius sed in ipsum.\nNunc consequat augue quis hendrerit convallis.\nSed sed libero mattis, pharetra dolor a, aliquam arcu.\nSed non neque vel nulla dapibus laoreet non non magna.\nNunc congue nisi et auctor scelerisque.\nPraesent eu nulla eu massa mattis eleifend.\nAenean nec dolor eu leo euismod faucibus.\nAliquam ac orci ultricies, laoreet tortor ut, suscipit justo.\nQuisque molestie lacus ac semper semper.\nVestibulum pretium velit laoreet tortor feugiat porta.\nPraesent et lectus sit amet odio dictum venenatis a vel sapien.\nDonec elementum risus vel justo accumsan, eu cursus sem placerat.\nDonec mattis nisi sed condimentum malesuada.\nSed nec eros et nulla pulvinar luctus eu ut quam.\nNam vitae felis in lacus mattis malesuada.\nProin vel nulla auctor, blandit lacus ac, venenatis nulla.\nSed in lectus consectetur, egestas nulla et, tempus leo.\nSed bibendum libero non varius scelerisque.\nPhasellus gravida odio sit amet leo consequat, non aliquet sapien tempor.\nSed vel lectus vel quam luctus faucibus.\nNam vel est ut lacus imperdiet imperdiet.\nMauris in nisi ac est vestibulum dignissim eu vitae nulla.\nCras id libero sit amet orci fermentum rutrum.\nNunc aliquet erat quis libero scelerisque, a pretium urna blandit.\nUt ornare sapien sit amet sem fringilla malesuada.\nAenean ac lacus nec velit tempus viverra non non enim.\nDuis dictum leo et ante auctor porttitor.\nNunc molestie enim at augue pretium, nec efficitur nisl interdum.\nAenean quis urna posuere, scelerisque nibh quis, condimentum augue.\nSed vehicula leo ut viverra lacinia.\nDonec id sem quis ligula tincidunt imperdiet.\nAliquam cursus diam vitae eros viverra, vitae vestibulum arcu ultricies.\nUt mattis mi vitae convallis tempus.\nIn sit amet ipsum venenatis, finibus nisi vitae, pulvinar orci.\nCras sit amet libero in est sagittis imperdiet quis in risus.\nQuisque vehicula ligula vel lectus bibendum cursus.\nMorbi vel neque non est imperdiet dapibus.\nDonec id nisi facilisis dui molestie auctor at sit amet tellus.\nFusce vitae velit a arcu sodales scelerisque.\nVivamus tempor nisi in risus scelerisque, sed sodales sem aliquet.\nFusce luctus quam non est facilisis auctor.\nPellentesque convallis felis ut ullamcorper fringilla.\nVestibulum euismod lectus vel risus laoreet tristique ac id augue.\nInteger consectetur velit luctus malesuada pellentesque.\nAenean et sapien eget tortor faucibus cursus.\nInteger dignissim turpis ac diam interdum rutrum.\nIn eget nunc vitae odio tincidunt feugiat eget sagittis augue.\nVivamus feugiat dolor id libero pulvinar consequat.\nNulla molestie magna nec bibendum scelerisque.\nAenean dictum quam id nibh dictum rutrum.\nFusce at lorem vulputate, hendrerit nulla in, pulvinar elit.\nPraesent tempor mi a diam tempor laoreet.\nMauris convallis ipsum eu lacus convallis euismod id auctor neque.\nPraesent euismod dolor in orci accumsan, ut maximus eros tristique.");
+        jScrollPane1.setViewportView(Howto);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jButton3)
+                .addComponent(GuideHyperlink)
                 .addGap(0, 455, Short.MAX_VALUE))
             .addComponent(jScrollPane1)
         );
@@ -83,20 +83,20 @@ public class Gui_guidepage extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(GuideHyperlink, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void GuideHyperlinkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GuideHyperlinkActionPerformed
         String url="https://arsandbox.ucdavis.edu/forums/topic/complete-installation-instructions/";
         try {
             java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
         } catch (IOException ex) {
             Logger.getLogger(Gui_guidepage.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_GuideHyperlinkActionPerformed
     
 
     /**
@@ -142,9 +142,9 @@ public class Gui_guidepage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton GuideHyperlink;
+    private javax.swing.JTextArea Howto;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
