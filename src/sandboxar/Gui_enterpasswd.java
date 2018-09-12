@@ -102,7 +102,7 @@ public class Gui_enterpasswd extends javax.swing.JFrame {
         //Getting password from the input field
         char[] pass = PasswordField.getPassword();
         passwd = new String(pass);
-            //Checking to see if the password field is empty, if so, a popup warns the user and the next dialog doesn't popup
+            //Checking to see if the password field is empty, if so, a popup warns the user and the next dialog doesn't pop up
             if(passwd.isEmpty())
             {
                 JOptionPane.showMessageDialog(null,"Password Field is empty"); 
