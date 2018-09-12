@@ -36,6 +36,7 @@ public class Gui_install extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setName("mainframe"); // NOI18N
+        setResizable(false);
 
         title.setText("ARSandbox install utility");
 
