@@ -17,6 +17,8 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.UnsupportedLookAndFeelException;
 
 public final class Gui_run extends JFrame {
+    // The S is to switch the -arguments on
+    // The T is to specify the argument settings: -Suhm Tuhm
 public static String Suhm, Sfpv, Suhs, Sus, Sncl, Srws, Srwt, Sc, Sf, Ss, Sslf, Ser, Shmp, Snas, Ssp, She, Swts, Sws, Srer, Srs, Sevr, Sdds, Swi, Swo, Scp;
 public static String Tuhm, Tfpv, Tc, Tf, Ts, Tslf, Ter, Thmp, Tnas, Tsp, The, Twts, Tws, Trer, Trs, Tevr, Tdds, Twi, Two, Tcp;
 static String home = System.getProperty("user.home");
