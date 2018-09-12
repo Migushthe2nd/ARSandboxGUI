@@ -56,7 +56,7 @@ static String home = System.getProperty("user.home");
 		
 		L = new JLabel("<html><p>Enables hill shading</p></html>");
 		add(L);	
-		CBuhs = new JCheckBox("uhs optie");
+		CBuhs = new JCheckBox("uhs");
 		add(CBuhs);
 		
 		E1 = new JLabel("");
@@ -64,7 +64,7 @@ static String home = System.getProperty("user.home");
 		
 		L = new JLabel("<html><p>Enables shadows</p></html>");
 		add(L);	
-		CBus = new JCheckBox("us optie");
+		CBus = new JCheckBox("us");
 		add(CBus);
 		
 		E1 = new JLabel("");
@@ -72,7 +72,7 @@ static String home = System.getProperty("user.home");
 		
 		L = new JLabel("<html><p>Disables topographic contour lines</p></html>");
 		add(L);	
-		CBncl = new JCheckBox("ncl optie");
+		CBncl = new JCheckBox("ncl");
 		add(CBncl);
 		
 		E1 = new JLabel("");
@@ -80,7 +80,7 @@ static String home = System.getProperty("user.home");
 		
 		L = new JLabel("<html><p>Renders water surface as geometric surface</p></html>");
 		add(L);	
-		CBrws = new JCheckBox("rws optie");
+		CBrws = new JCheckBox("rws");
 		add(CBrws);
 		
 		E1 = new JLabel("");
@@ -88,7 +88,7 @@ static String home = System.getProperty("user.home");
 		
 		L = new JLabel("<html><p>Renders water surface as texture</p></html>");
 		add(L);	
-		CBrwt = new JCheckBox("rwt optie");
+		CBrwt = new JCheckBox("rwt");
 		add(CBrwt);
 		
 		E1 = new JLabel("");
