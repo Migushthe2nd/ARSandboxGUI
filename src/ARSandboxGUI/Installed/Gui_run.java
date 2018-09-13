@@ -17,7 +17,7 @@ import javax.swing.JTextField;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.UnsupportedLookAndFeelException;
 
-public final class Gui_CreateCommand extends JFrame {
+public final class Gui_run extends JFrame {
     // The S is to switch the -arguments on
     // The T is to specify the argument settings: -Suhm Tuhm
 public static String Suhm, Sfpv, Suhs, Sus, Sncl, Srws, Srwt, Sc, Sf, Ss, Sslf, Ser, Shmp, Snas, Ssp, She, Swts, Sws, Srer, Srs, Sevr, Sdds, Swi, Swo, Scp;
@@ -31,7 +31,7 @@ static String home = System.getProperty("user.home");
 	JLabel E1, E2, E3, E4, E5, E6, E7, E8, L;
 	//uhm, Lfpv, Luhs, Lus, Lncl, Lrws, L, Lc, Lf, Ls, Lslf, Ler, Lhmp, Lnas, Lsp, Lhe, Lwts, Lws, Lrer, Lrs, Levr, Ldds, Lwi, Lwo, Lcp
 	JScrollPane pane;
-	public Gui_CreateCommand() {
+	public Gui_run() {
 		setLayout(new GridLayout(26, 1, 0, 0));
 		//setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
 		//panel.setLayout(new GridLayout(20,1));
@@ -788,7 +788,7 @@ static String home = System.getProperty("user.home");
             java.util.logging.Logger.getLogger(Gui_enterpasswd.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         
-	    	final Gui_CreateCommand gui_run = new Gui_CreateCommand();
+	    	final Gui_run gui_run = new Gui_run();
 	    	gui_run.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    	gui_run.setVisible(true);
 	    	gui_run.setSize(1250, 980);

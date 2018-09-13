@@ -19,7 +19,7 @@ public class Gui_Intro {
         File f = new File(home + "/.ARSandboxTool/options.txt");
         if(f.exists() && !f.isDirectory()) 
         { 
-            ARSandboxGUI.Installed.Gui_CreateCommand.main();
+            ARSandboxGUI.Installed.Gui_run.main();
         }   
         else
         {

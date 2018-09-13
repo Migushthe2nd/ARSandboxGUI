@@ -1,6 +1,6 @@
 package ARSandboxGUI.Installed;
 
-import ARSandboxGUI.Installed.Gui_CreateCommand;
+import ARSandboxGUI.Installed.Gui_run;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -14,29 +14,29 @@ public class Class_RunSandboxCommand {
 	    //String[] arg = new String[]{"-u root", "-h localhost"};
 		
         String textfields = 
-        		Gui_CreateCommand.Suhm + " " + Gui_CreateCommand.Tuhm + " " +
-        		Gui_CreateCommand.Sfpv + " " + Gui_CreateCommand.Tfpv + " " +
-        		Gui_CreateCommand.Sc + " " + Gui_CreateCommand.Tc + " " +
-        		Gui_CreateCommand.Sf + " " + Gui_CreateCommand.Tf + " " +
-        		Gui_CreateCommand.Sslf + " " + Gui_CreateCommand.Tslf + " " +
-        		Gui_CreateCommand.Ser + " " + Gui_CreateCommand.Ter + " " +
-        		Gui_CreateCommand.Shmp + " " + Gui_CreateCommand.Thmp + " " +
-        		Gui_CreateCommand.Snas + " " + Gui_CreateCommand.Tnas + " " +
-        		Gui_CreateCommand.Ssp + " " + Gui_CreateCommand.Tsp + " " +
-        		Gui_CreateCommand.She + " " + Gui_CreateCommand.The + " " +
-        		Gui_CreateCommand.Swts + " " + Gui_CreateCommand.Twts + " " +
-        		Gui_CreateCommand.Sws + " " + Gui_CreateCommand.Tws + " " +
-        		Gui_CreateCommand.Srer + " " + Gui_CreateCommand.Trer + " " +
-        		Gui_CreateCommand.Srs + " " + Gui_CreateCommand.Trs + " " +
-        		Gui_CreateCommand.Sevr + " " + Gui_CreateCommand.Tevr + " " +
-        		Gui_CreateCommand.Sdds + " " + Gui_CreateCommand.Tdds + " " +
-        		Gui_CreateCommand.Swi + " " + Gui_CreateCommand.Twi + " " +
-        		Gui_CreateCommand.Swo + " " + Gui_CreateCommand.Two + " " +
-        		Gui_CreateCommand.Scp + " " + Gui_CreateCommand.Tcp;
+        		Gui_run.Suhm + " " + Gui_run.Tuhm + " " +
+        		Gui_run.Sfpv + " " + Gui_run.Tfpv + " " +
+        		Gui_run.Sc + " " + Gui_run.Tc + " " +
+        		Gui_run.Sf + " " + Gui_run.Tf + " " +
+        		Gui_run.Sslf + " " + Gui_run.Tslf + " " +
+        		Gui_run.Ser + " " + Gui_run.Ter + " " +
+        		Gui_run.Shmp + " " + Gui_run.Thmp + " " +
+        		Gui_run.Snas + " " + Gui_run.Tnas + " " +
+        		Gui_run.Ssp + " " + Gui_run.Tsp + " " +
+        		Gui_run.She + " " + Gui_run.The + " " +
+        		Gui_run.Swts + " " + Gui_run.Twts + " " +
+        		Gui_run.Sws + " " + Gui_run.Tws + " " +
+        		Gui_run.Srer + " " + Gui_run.Trer + " " +
+        		Gui_run.Srs + " " + Gui_run.Trs + " " +
+        		Gui_run.Sevr + " " + Gui_run.Tevr + " " +
+        		Gui_run.Sdds + " " + Gui_run.Tdds + " " +
+        		Gui_run.Swi + " " + Gui_run.Twi + " " +
+        		Gui_run.Swo + " " + Gui_run.Two + " " +
+        		Gui_run.Scp + " " + Gui_run.Tcp;
         String checkboxes = 
-        		Gui_CreateCommand.Suhs + " " + Gui_CreateCommand.Sus + " " + 
-        		Gui_CreateCommand.Sncl + " " + Gui_CreateCommand.Srws + " " + 
-        		Gui_CreateCommand.Srwt;
+        		Gui_run.Suhs + " " + Gui_run.Sus + " " + 
+        		Gui_run.Sncl + " " + Gui_run.Srws + " " + 
+        		Gui_run.Srwt;
         String buttons = "";
         try {
 	        String ss = null;
