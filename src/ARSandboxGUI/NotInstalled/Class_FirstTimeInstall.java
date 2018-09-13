@@ -28,8 +28,7 @@ public class Class_FirstTimeInstall {
                 System.out.println("File already exists?");
                 }
                 file.setExecutable(true, true);
-                
-                //Write Content
+                //Write Content to run.sh
                 FileWriter writer = new FileWriter(file);
                 writer.write("echo " + passwd  + " | sudo -S ls\n" +
                 "wget http://idav.ucdavis.edu/~okreylos/ResDev/Vrui/Build-Ubuntu.sh\n" +
@@ -55,7 +54,7 @@ public class Class_FirstTimeInstall {
                 System.out.println("File already exists.");
                 }
                 filee.setExecutable(true, true);
-                //Write Content
+                //Write Content to run2.sh
                 FileWriter writerr = new FileWriter(filee);
                 writerr.write("echo " + passwd + " | sudo -S ls\n" 
                         + "sudo /usr/local/bin/KinectUtil getCalib 0");
@@ -69,7 +68,7 @@ public class Class_FirstTimeInstall {
                 System.out.println("File already exists.");
                 }
                 fileee.setExecutable(true, true);
-                //Write Content
+                //Write Content to run3.sh
                 FileWriter writerrr = new FileWriter(fileee);
                 writerrr.write("echo " + passwd + " | sudo -S ls\n" 
                         + "cd " + home + "/src/SARndbox-2.3"
