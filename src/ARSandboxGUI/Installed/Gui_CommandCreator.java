@@ -581,11 +581,7 @@ static String home = System.getProperty("user.home");
 				{
 					Tcp = TFcp.getText();
 				}
-				if(CBuhm.isSelected()) 
-				{
-					Suhm = ("-uhm");
-					System.out.println("-uhm");
-				}
+
 //Checks Only				
 				if(CBuhs.isSelected()) 
 				{
@@ -625,7 +621,6 @@ static String home = System.getProperty("user.home");
 	    	gui.setVisible(true);
 	    	gui.setSize(1250, 980);
                 gui.setTitle("ARSandbox start options");
-                gui.pack();
                 gui.setLocationRelativeTo(null);
                 gui.setDefaultCloseOperation(Gui_CommandCreator.EXIT_ON_CLOSE);
 
