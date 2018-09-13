@@ -1,13 +1,13 @@
 package ARSandboxGUI.NotInstalled;
 
-import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
-public class Gui_enterpasswd extends javax.swing.JFrame {
+public class Gui_EnterPasswd extends javax.swing.JFrame {
     public static String passwd;
-    public Gui_enterpasswd() {
+    public static Gui_EnterPasswd gui;
+    public Gui_EnterPasswd() {
         initComponents();
     }
 
@@ -91,25 +91,23 @@ public class Gui_enterpasswd extends javax.swing.JFrame {
             }
             else 
             {
-            try {
-                ARSandboxGUI.NotInstalled.Class_FirstTimeInstall.main();
-            } catch (InterruptedException ex) {
-                Logger.getLogger(Gui_enterpasswd.class.getName()).log(Level.SEVERE, null, ex);
+                try {
+                    ARSandboxGUI.NotInstalled.Class_FirstTimeInstall.main();
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(Gui_EnterPasswd.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
-            }
-
-
     }//GEN-LAST:event_DoneActionPerformed
 
     public static void main() {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-            final Gui_enterpasswd gui = new Gui_enterpasswd();
+                gui = new Gui_EnterPasswd();
                 gui.setVisible(true);
                 gui.setTitle("Password required");
                 gui.pack();
                 gui.setLocationRelativeTo(null);
-                gui.setDefaultCloseOperation(Gui_enterpasswd.EXIT_ON_CLOSE);
+                gui.setDefaultCloseOperation(Gui_EnterPasswd.EXIT_ON_CLOSE);
             }
         });
     }
