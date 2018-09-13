@@ -30,6 +30,6 @@ public class Gui_FirstTimeOpening {
     public static void startinstalling() throws InterruptedException {
         ARSandboxGUI.Gui_installingLoading.main(null);
         TimeUnit.SECONDS.sleep(2);
-        ARSandboxGUI.InstallARSandbox.main();
+        ARSandboxGUI.Class_FirstTimeInstall.main();
     }   
 }

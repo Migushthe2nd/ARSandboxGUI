@@ -110,7 +110,7 @@ public class Gui_enterpasswd extends javax.swing.JFrame {
             else 
             {
             try {
-                ARSandboxGUI.InstallARSandbox.main();
+                ARSandboxGUI.Class_FirstTimeInstall.main();
             } catch (InterruptedException ex) {
                 Logger.getLogger(Gui_enterpasswd.class.getName()).log(Level.SEVERE, null, ex);
             }

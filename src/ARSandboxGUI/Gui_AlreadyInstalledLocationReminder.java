@@ -9,12 +9,12 @@ package ARSandboxGUI;
  *
  * @author ihave
  */
-public class AlreadyInstalledLocationConfirmation extends javax.swing.JFrame {
+public class Gui_AlreadyInstalledLocationReminder extends javax.swing.JFrame {
 
     /**
      * Creates new form AlreadyInstalledLocationConfimation
      */
-    public AlreadyInstalledLocationConfirmation() {
+    public Gui_AlreadyInstalledLocationReminder() {
         initComponents();
     }
 
@@ -97,21 +97,23 @@ public class AlreadyInstalledLocationConfirmation extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AlreadyInstalledLocationConfirmation.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Gui_AlreadyInstalledLocationReminder.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AlreadyInstalledLocationConfirmation.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Gui_AlreadyInstalledLocationReminder.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AlreadyInstalledLocationConfirmation.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Gui_AlreadyInstalledLocationReminder.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AlreadyInstalledLocationConfirmation.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Gui_AlreadyInstalledLocationReminder.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AlreadyInstalledLocationConfirmation().setVisible(true);
+                new Gui_AlreadyInstalledLocationReminder().setVisible(true);
             }
         });
     }

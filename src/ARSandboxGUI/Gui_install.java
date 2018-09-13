@@ -98,7 +98,7 @@ public class Gui_install extends javax.swing.JFrame {
 
     private void OldInstallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OldInstallActionPerformed
         // TODO add your handling code here:
-        ARSandboxGUI.AlreadyInstalledLocationConfirmation.main(null);
+        ARSandboxGUI.Gui_AlreadyInstalledLocationReminder.main(null);
     }//GEN-LAST:event_OldInstallActionPerformed
 
     private void NewInstallStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_NewInstallStateChanged

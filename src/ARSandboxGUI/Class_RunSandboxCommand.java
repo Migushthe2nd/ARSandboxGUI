@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import javax.swing.JOptionPane;
 
-public class RunShellCommand {
+public class Class_RunSandboxCommand {
         static String home = System.getProperty("user.home");
 	public static void main() {
 	    //String[] arg = new String[]{"-u root", "-h localhost"};

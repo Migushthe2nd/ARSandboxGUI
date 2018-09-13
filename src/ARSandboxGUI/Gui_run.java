@@ -762,7 +762,7 @@ static String home = System.getProperty("user.home");
 					System.out.println("-rwt");
 				}
 				
-				RunShellCommand.main();
+				Class_RunSandboxCommand.main();
 			}
 			
 		}

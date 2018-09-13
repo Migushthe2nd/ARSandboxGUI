@@ -12,7 +12,7 @@ import static java.lang.Thread.sleep;
 import java.util.concurrent.TimeUnit;
 import javax.swing.JOptionPane;
 
-public class InstallARSandbox {
+public class Class_FirstTimeInstall {
     static String passwd = Gui_enterpasswd.passwd;
     static String home = System.getProperty("user.home");
     public static void main() throws InterruptedException {
