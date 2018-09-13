@@ -91,11 +91,7 @@ public class Gui_enterpasswd extends javax.swing.JFrame {
             }
             else 
             {
-                try {
-                    ARSandboxGUI.NotInstalled.Class_FirstTimeInstall.main();
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(Gui_enterpasswd.class.getName()).log(Level.SEVERE, null, ex);
-                }
+                ARSandboxGUI.Class_Main.EnterPasswdTOInstallingLoading();
             }
     }//GEN-LAST:event_DoneActionPerformed
 

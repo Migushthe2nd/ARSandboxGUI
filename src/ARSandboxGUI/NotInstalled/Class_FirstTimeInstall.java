@@ -63,6 +63,8 @@ public class Class_FirstTimeInstall {
                 JOptionPane.showMessageDialog(null, "Press 'esc' when a spinning globe pops up", "Info", JOptionPane.INFORMATION_MESSAGE);
                 //String ss = null;
 	        //String command1 = "chmod +x " + home + "/.ARSandboxTool/run.sh";
+// Open the loading sreen because it is downloading the files now
+                ARSandboxGUI.NotInstalled.Gui_installingLoading.main();
                 String command2 = home + "/.ARSandboxTool/run.sh";
                 
 	        System.out.println(command2);

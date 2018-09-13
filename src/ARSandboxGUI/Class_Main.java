@@ -1,5 +1,8 @@
 package ARSandboxGUI;
+import ARSandboxGUI.NotInstalled.Gui_enterpasswd;
 import java.io.File;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Class_Main {
     static String home = System.getProperty("user.home");
@@ -19,6 +22,16 @@ public class Class_Main {
         ARSandboxGUI.Gui_Intro.gui.dispose();
         ARSandboxGUI.NotInstalled.Gui_enterpasswd.main();
     }
+    public static void EnterPasswdTOInstallingLoading() {
+        ARSandboxGUI.NotInstalled.Gui_enterpasswd.gui.dispose();
+                try {
+                    //ARSandboxGUI.NotInstalled.Gui_installingLoading.main(); <-- not needed because the installation is almost instant
+                    ARSandboxGUI.NotInstalled.Class_FirstTimeInstall.main();
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(Gui_enterpasswd.class.getName()).log(Level.SEVERE, null, ex);
+                }
+    }
+
     public static void IntroTOAlreadyInstalledLocationReminder() {
         ARSandboxGUI.Gui_Intro.gui.dispose();
         ARSandboxGUI.Installed.Gui_AlreadyInstalledLocationReminder.main();
