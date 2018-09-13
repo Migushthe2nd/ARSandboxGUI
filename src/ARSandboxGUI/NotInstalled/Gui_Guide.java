@@ -87,7 +87,7 @@ public class Gui_Guide extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_GuideHyperlinkActionPerformed
     
-    public static void main(String args[]) {
+    public static void main() {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
             final Gui_Guide gui = new Gui_Guide();

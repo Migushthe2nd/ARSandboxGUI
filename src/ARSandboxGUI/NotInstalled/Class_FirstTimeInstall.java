@@ -150,7 +150,7 @@ public class Class_FirstTimeInstall {
             		"Error", JOptionPane.WARNING_MESSAGE);
 	    }
             
-            ARSandboxGUI.Class_Main.InstallingLoadingExit();
+            ARSandboxGUI.Class_Main.InstallingLoadingTOGuide();
          
         }
 }

@@ -32,8 +32,9 @@ public class Class_Main {
                 }
     }
     
-    public static void InstallingLoadingExit() {
+    public static void InstallingLoadingTOGuide() {
         ARSandboxGUI.NotInstalled.Gui_installingLoading.gui.dispose();
+        ARSandboxGUI.NotInstalled.Gui_Guide.main();
     }
     
     public static void IntroTOAlreadyInstalledLocationReminder() {
