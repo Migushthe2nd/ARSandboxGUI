@@ -3,11 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sandboxar;
+package ARSandboxGUI;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
-import javax.swing.UnsupportedLookAndFeelException;
 
 /**
  *
@@ -15,25 +14,22 @@ import javax.swing.UnsupportedLookAndFeelException;
  */
 public class Gui {
     static String home = System.getProperty("user.home");
-    /**
-     * @param args the command line arguments
-     */
     public static void main() {
         //Checking if options.txt exist to prevent the 'Firt time opening' pop-up from popping up
         File f = new File(home + "/.ARSandboxTool/options.txt");
         if(f.exists() && !f.isDirectory()) 
         { 
-            sandboxar.Gui_run.main(null);
+            ARSandboxGUI.Gui_run.main();
         }   
         else
         {
-            sandboxar.Gui_install.main(null);
+            ARSandboxGUI.Gui_install.main();
         }
     }
     
-    public static void startinstalling(String[] args) throws InterruptedException {
-        sandboxar.Gui_installingLoading.main(null);
+    public static void startinstalling() throws InterruptedException {
+        ARSandboxGUI.Gui_installingLoading.main(null);
         TimeUnit.SECONDS.sleep(2);
-        sandboxar.InstallARSandbox.main();
+        ARSandboxGUI.InstallARSandbox.main();
     }   
 }

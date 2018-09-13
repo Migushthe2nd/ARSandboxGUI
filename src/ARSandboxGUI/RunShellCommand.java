@@ -1,4 +1,4 @@
-package sandboxar;
+package ARSandboxGUI;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

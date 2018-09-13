@@ -1,4 +1,4 @@
-package sandboxar;
+package ARSandboxGUI;
 
 import java.awt.event.WindowEvent;
 import java.io.BufferedReader;

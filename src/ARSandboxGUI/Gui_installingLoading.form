@@ -85,7 +85,7 @@
     <Component class="javax.swing.JLabel" name="LoadingGIF">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/sandboxar/assets/loading_bar.gif"/>
+          <Image iconType="3" name="/ARSandboxGUI/assets/loading_bar.gif"/>
         </Property>
       </Properties>
     </Component>

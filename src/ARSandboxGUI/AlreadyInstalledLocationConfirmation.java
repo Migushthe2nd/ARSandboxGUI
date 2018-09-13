@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sandboxar;
+package ARSandboxGUI;
 
 /**
  *
@@ -77,7 +77,7 @@ public class AlreadyInstalledLocationConfirmation extends javax.swing.JFrame {
 
     private void OKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OKActionPerformed
         // TODO add your handling code here:
-        sandboxar.Gui_install.main(null);
+        ARSandboxGUI.Gui_install.main();
     }//GEN-LAST:event_OKActionPerformed
 
     /**

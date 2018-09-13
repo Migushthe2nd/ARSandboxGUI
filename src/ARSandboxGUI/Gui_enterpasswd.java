@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sandboxar;
+package ARSandboxGUI;
 
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
@@ -109,20 +109,17 @@ public class Gui_enterpasswd extends javax.swing.JFrame {
             }
             else 
             {
-                try {
-                    Gui.startinstalling(null);
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(Gui_enterpasswd.class.getName()).log(Level.SEVERE, null, ex);
-                }
+            try {
+                ARSandboxGUI.InstallARSandbox.main();
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Gui_enterpasswd.class.getName()).log(Level.SEVERE, null, ex);
+            }
             }
 
 
     }//GEN-LAST:event_DoneActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
+    public static void main() {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -151,7 +148,7 @@ public class Gui_enterpasswd extends javax.swing.JFrame {
             public void run() {
                 final Gui_enterpasswd gui_passwd = new Gui_enterpasswd();
                 gui_passwd.setVisible(true);
-                gui_passwd.setTitle("Password required");
+                gui_passwd.setTitle("Password equired");
             }
         });
     }

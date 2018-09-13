@@ -1,4 +1,4 @@
-package sandboxar;
+package ARSandboxGUI;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -768,7 +768,7 @@ static String home = System.getProperty("user.home");
 		}
 
 	    }
-	    public static void main(String args[]) {
+	    public static void main() {
         
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

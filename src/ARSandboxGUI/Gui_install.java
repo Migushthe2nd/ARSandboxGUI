@@ -1,4 +1,4 @@
-package sandboxar;
+package ARSandboxGUI;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -98,7 +98,7 @@ public class Gui_install extends javax.swing.JFrame {
 
     private void OldInstallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OldInstallActionPerformed
         // TODO add your handling code here:
-        sandboxar.AlreadyInstalledLocationConfirmation.main(null);
+        ARSandboxGUI.AlreadyInstalledLocationConfirmation.main(null);
     }//GEN-LAST:event_OldInstallActionPerformed
 
     private void NewInstallStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_NewInstallStateChanged
@@ -108,13 +108,10 @@ public class Gui_install extends javax.swing.JFrame {
     private void NewInstallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NewInstallActionPerformed
         // TODO add your handling code here:
         
-        sandboxar.Gui_enterpasswd.main(null);
+        ARSandboxGUI.Gui_enterpasswd.main();
     }//GEN-LAST:event_NewInstallActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
+    public static void main() {
         /* Set the Nimbus look and feel*/
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
