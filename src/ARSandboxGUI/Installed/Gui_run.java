@@ -1,5 +1,4 @@
 package ARSandboxGUI.Installed;
-import ARSandboxGUI.NotInstalled.Gui_enterpasswd;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,13 +8,8 @@ import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import javax.swing.ScrollPaneConstants;
-import javax.swing.UnsupportedLookAndFeelException;
 
 public final class Gui_run extends JFrame {
     // The S is to switch the -arguments on
@@ -31,6 +25,7 @@ static String home = System.getProperty("user.home");
 	JLabel E1, E2, E3, E4, E5, E6, E7, E8, L;
 	//uhm, Lfpv, Luhs, Lus, Lncl, Lrws, L, Lc, Lf, Ls, Lslf, Ler, Lhmp, Lnas, Lsp, Lhe, Lwts, Lws, Lrer, Lrs, Levr, Ldds, Lwi, Lwo, Lcp
 	JScrollPane pane;
+@SuppressWarnings("empty-statement")
 	public Gui_run() {
 		setLayout(new GridLayout(26, 1, 0, 0));
 		//setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
@@ -244,44 +239,28 @@ static String home = System.getProperty("user.home");
 		
 		events e = new events();
 		TFuhm.addActionListener(e);
-		CBuhm.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFuhm.setEnabled(true);
-							Suhm = ("-uhm");
-
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFuhm.setEnabled(false);
-							Suhm = ("");
-							Tuhm = ("");
-						}
-					}
-				}); 
-;
+		CBuhm.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFuhm.setEnabled(true);
+                        Suhm = ("-uhm");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFuhm.setEnabled(false);
+                        Suhm = ("");
+                        Tuhm = ("");
+                    }
+                }); 
+                
 		TFfpv.addActionListener(e);
-		CBfpv.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFfpv.setEnabled(true);
-							Sfpv = ("-fpv");
-
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFfpv.setEnabled(false);
-							Sfpv = ("");
-							Tfpv = ("");
-						}
-					}
-				}); 
+		CBfpv.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFfpv.setEnabled(true);
+                        Sfpv = ("-fpv");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFfpv.setEnabled(false);
+                        Sfpv = ("");
+                        Tfpv = ("");
+                    }
+                }); 
 
 		CBuhs.addItemListener(e);
 		CBus.addItemListener(e);
@@ -290,351 +269,222 @@ static String home = System.getProperty("user.home");
 		CBrwt.addItemListener(e);
 		
 		TFc.addActionListener(e);
-		CBc.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFc.setEnabled(true);
-							Sc = ("-c");
-
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFc.setEnabled(false);
-							Sc = ("");
-							Tc = ("");
-						}
-					}
-				}); 
+		CBc.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFc.setEnabled(true);
+                        Sc = ("-c");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFc.setEnabled(false);
+                        Sc = ("");
+                        Tc = ("");
+                    }
+                }); 
 
 		TFf.addActionListener(e);
-		CBf.addItemListener(
-						new ItemListener() {
-							
-							public void itemStateChanged(ItemEvent e) {
-								if(e.getStateChange() == ItemEvent.SELECTED)
-								{
-									TFf.setEnabled(true);
-									Sf = ("-f");
-
-								}
-								else if(e.getStateChange() == ItemEvent.DESELECTED)
-								{
-									TFf.setEnabled(false);
-									Sf = ("");
-									Tf = ("");
-								}
-							}
-						}); 
+		CBf.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFf.setEnabled(true);
+                        Sf = ("-f");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFf.setEnabled(false);
+                        Sf = ("");
+                        Tf = ("");
+                    }
+                }); 
 		
 		TFs.addActionListener(e);
-		CBs.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFs.setEnabled(true);
-							Ss = ("-s");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFs.setEnabled(false);
-							Ss = ("");
-							Ts = ("");
-						}
-					}
-				}); 
+		CBs.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFs.setEnabled(true);
+                        Ss = ("-s");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFs.setEnabled(false);
+                        Ss = ("");
+                        Ts = ("");
+                    }
+                }); 
 		
 		TFslf.addActionListener(e);
-		CBslf.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFslf.setEnabled(true);
-							Sslf = ("-slf");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFslf.setEnabled(false);
-							Sslf = ("");
-							Tslf = ("");
-						}
-					}
-				}); 
+		CBslf.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFslf.setEnabled(true);
+                        Sslf = ("-slf");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFslf.setEnabled(false);
+                        Sslf = ("");
+                        Tslf = ("");
+                    }
+                }); 
 		
 		TFer.addActionListener(e);
-		CBer.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFer.setEnabled(true);
-							Ser = ("-er");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFer.setEnabled(false);
-							Ser = ("");
-							Ter = ("");
-						}
-					}
-				}); 
+		CBer.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFer.setEnabled(true);
+                        Ser = ("-er");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFer.setEnabled(false);
+                        Ser = ("");
+                        Ter = ("");
+                    }
+                }); 
 		
 		TFhmp.addActionListener(e);
-		CBhmp.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFhmp.setEnabled(true);
-							Shmp = ("-hmp");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFhmp.setEnabled(false);
-							Shmp = ("");
-							Thmp = ("");
-						}
-					}
-				});  
+		CBhmp.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFhmp.setEnabled(true);
+                        Shmp = ("-hmp");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFhmp.setEnabled(false);
+                        Shmp = ("");
+                        Thmp = ("");
+                    }
+                });  
 		
 		TFnas.addActionListener(e);
-		CBnas.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFnas.setEnabled(true);
-							Snas = ("-nas");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFnas.setEnabled(false);
-							Snas = ("");
-							Tnas = ("");
-						}
-					}
-				});  
+		CBnas.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFnas.setEnabled(true);
+                        Snas = ("-nas");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFnas.setEnabled(false);
+                        Snas = ("");
+                        Tnas = ("");
+                    }
+                });  
 		
 		TFsp.addActionListener(e);
-		CBsp.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFsp.setEnabled(true);
-							Ssp = ("-sp");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFsp.setEnabled(false);
-							Ssp = ("");
-							Tsp = ("");
-						}
-					}
-				}); 
+		CBsp.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFsp.setEnabled(true);
+                        Ssp = ("-sp");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFsp.setEnabled(false);
+                        Ssp = ("");
+                        Tsp = ("");
+                    }
+                }); 
 		
 		TFhe.addActionListener(e);
-		CBhe.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFhe.setEnabled(true);
-							She = ("-he");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFhe.setEnabled(false);
-							She = ("");
-							The = ("");
-						}
-					}
-				}); 
+		CBhe.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFhe.setEnabled(true);
+                        She = ("-he");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFhe.setEnabled(false);
+                        She = ("");
+                        The = ("");
+                    }
+                }); 
 		
 		TFwts.addActionListener(e);
-		CBwts.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFwts.setEnabled(true);
-							Swts = ("-wts");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFwts.setEnabled(false);
-							Swts = ("");
-							Twts = ("");
-						}
-					}
-				}); 
+		CBwts.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFwts.setEnabled(true);
+                        Swts = ("-wts");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFwts.setEnabled(false);
+                        Swts = ("");
+                        Twts = ("");
+                    }
+                }); 
 		
 		TFws.addActionListener(e);
-		CBws.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFws.setEnabled(true);
-							Sws = ("-ws");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFws.setEnabled(false);
-							Sws = ("");
-							Tws = ("");
-						}
-					}
-				}); 
+		CBws.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFws.setEnabled(true);
+                        Sws = ("-ws");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFws.setEnabled(false);
+                        Sws = ("");
+                        Tws = ("");
+                    }
+                }); 
 		
 		TFrer.addActionListener(e);
-		CBrer.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFrer.setEnabled(true);
-							Srer = ("-rer");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFrer.setEnabled(false);
-							Srer = ("");
-							Trer = ("");
-						}
-					}
-				}); 
+		CBrer.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFrer.setEnabled(true);
+                        Srer = ("-rer");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFrer.setEnabled(false);
+                        Srer = ("");
+                        Trer = ("");
+                    }
+                }); 
 		
 		TFrs.addActionListener(e);
-		CBrs.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFrs.setEnabled(true);
-							Srs = ("-rs");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFrs.setEnabled(false);
-							Srs = ("");
-							Trs = ("");
-						}
-					}
-				}); 
+		CBrs.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFrs.setEnabled(true);
+                        Srs = ("-rs");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFrs.setEnabled(false);
+                        Srs = ("");
+                        Trs = ("");
+                    }
+                }); 
 		
 		TFevr.addActionListener(e);
-		CBevr.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFevr.setEnabled(true);
-							Sevr = ("-evr");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFevr.setEnabled(false);
-							Sevr = ("");
-							Tevr = ("");
-						}
-					}
-				}); 
+		CBevr.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFevr.setEnabled(true);
+                        Sevr = ("-evr");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFevr.setEnabled(false);
+                        Sevr = ("");
+                        Tevr = ("");
+                    }
+                }); 
 		
 		TFdds.addActionListener(e);
-		CBdds.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFdds.setEnabled(true);
-							Sdds = ("-dds");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFdds.setEnabled(false);
-							Sdds = ("");
-							Tdds = ("");
-						}
-					}
-				}); 
+		CBdds.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFdds.setEnabled(true);
+                        Sdds = ("-dds");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFdds.setEnabled(false);
+                        Sdds = ("");
+                        Tdds = ("");
+                    }
+                }); 
 		
 		TFwi.addActionListener(e);
-		CBwi.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFwi.setEnabled(true);
-							Swi = ("-wi");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFwi.setEnabled(false);
-							Swi = ("");
-							Twi = ("");
-						}
-					}
-				}); 
+		CBwi.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFwi.setEnabled(true);
+                        Swi = ("-wi");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFwi.setEnabled(false);
+                        Swi = ("");
+                        Twi = ("");
+                    }
+                }); 
 		
 		TFwo.addActionListener(e);
-		CBwo.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFwo.setEnabled(true);
-							Swo = ("-wo");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFwo.setEnabled(false);
-							Swo = ("");
-							Two = ("");
-						}
-					}
-				}); 
+		CBwo.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFwo.setEnabled(true);
+                        Swo = ("-wo");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFwo.setEnabled(false);
+                        Swo = ("");
+                        Two = ("");
+                    }
+                }); 
 		
 		TFcp.addActionListener(e);
-		CBcp.addItemListener(
-				new ItemListener() {
-					
-					public void itemStateChanged(ItemEvent e) {
-						if(e.getStateChange() == ItemEvent.SELECTED)
-						{
-							TFcp.setEnabled(true);
-							Scp = ("-cp");
-						}
-						else if(e.getStateChange() == ItemEvent.DESELECTED)
-						{
-							TFcp.setEnabled(false);
-							Scp = ("");
-							Tcp = ("");
-						}
-					}
-				}); 
+		CBcp.addItemListener((ItemEvent e1) -> {
+                    if (e1.getStateChange() == ItemEvent.SELECTED) {
+                        TFcp.setEnabled(true);
+                        Scp = ("-cp");
+                    } else if (e1.getStateChange() == ItemEvent.DESELECTED) {
+                        TFcp.setEnabled(false);
+                        Scp = ("");
+                        Tcp = ("");
+                    }
+                }); 
 		
 		run.addActionListener(e);;
-//		run.setSize(10,10); Bedoeling is de grootte van de knop aanpassen
 	}
 
 	public class events implements ItemListener, ActionListener {
