@@ -21,6 +21,5 @@ public class Gui_Intro {
         ARSandboxGUI.NotInstalled.Gui_installingLoading.main(null);
         TimeUnit.SECONDS.sleep(2);
         ARSandboxGUI.NotInstalled.Class_FirstTimeInstall.main();
-
     }   
 }
