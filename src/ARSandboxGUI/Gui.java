@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class Gui {
     static String home = System.getProperty("user.home");
-    public static void main() {
+    public static void main(String[] args) {
         //Checking if options.txt exist to prevent the 'Firt time opening' pop-up from popping up
         File f = new File(home + "/.ARSandboxTool/options.txt");
         if(f.exists() && !f.isDirectory()) 
