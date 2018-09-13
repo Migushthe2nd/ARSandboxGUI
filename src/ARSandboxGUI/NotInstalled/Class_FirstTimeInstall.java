@@ -149,5 +149,8 @@ public class Class_FirstTimeInstall {
             		"" + System.lineSeparator() + "Error: " + e.toString(),
             		"Error", JOptionPane.WARNING_MESSAGE);
 	    }
+            
+            ARSandboxGUI.Class_Main.InstallingLoadingExit();
+         
         }
 }

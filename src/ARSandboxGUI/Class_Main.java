@@ -31,10 +31,22 @@ public class Class_Main {
                     Logger.getLogger(Gui_enterpasswd.class.getName()).log(Level.SEVERE, null, ex);
                 }
     }
-
+    
+    public static void InstallingLoadingExit() {
+        ARSandboxGUI.NotInstalled.Gui_installingLoading.gui.dispose();
+    }
+    
     public static void IntroTOAlreadyInstalledLocationReminder() {
         ARSandboxGUI.Gui_Intro.gui.dispose();
         ARSandboxGUI.Installed.Gui_AlreadyInstalledLocationReminder.main();
+    }
+    public static void AlreadyInstalledLocationReminderTOCommandCreator() {
+        ARSandboxGUI.Installed.Gui_AlreadyInstalledLocationReminder.gui.dispose();
+        ARSandboxGUI.Installed.Gui_CommandCreator.main();
+    }
+    public static void CommandCreatorTO() {
+        ARSandboxGUI.Installed.Gui_AlreadyInstalledLocationReminder.gui.dispose();
+        ARSandboxGUI.Installed.Gui_CommandCreator.main();
     }
     
 }

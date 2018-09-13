@@ -1,8 +1,6 @@
 package ARSandboxGUI.NotInstalled;
-
-
 public class Gui_installingLoading extends javax.swing.JFrame {
-
+    public static Gui_installingLoading gui;
     public Gui_installingLoading() {
         initComponents();
     }
@@ -53,7 +51,7 @@ public class Gui_installingLoading extends javax.swing.JFrame {
     public static void main() throws InterruptedException {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                final Gui_installingLoading gui = new Gui_installingLoading();
+                gui = new Gui_installingLoading();
                 gui.setVisible(true);
                 gui.setTitle("Installation");
                 gui.pack();

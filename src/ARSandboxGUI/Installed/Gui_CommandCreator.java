@@ -12,6 +12,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 
 public final class Gui_CommandCreator extends JFrame {
+public static Gui_CommandCreator gui;
     // The S is to switch the -arguments on
     // The T is to specify the argument settings: -Suhm Tuhm
 public static String Suhm, Sfpv, Suhs, Sus, Sncl, Srws, Srwt, Sc, Sf, Ss, Sslf, Ser, Shmp, Snas, Ssp, She, Swts, Sws, Srer, Srs, Sevr, Sdds, Swi, Swo, Scp;
@@ -617,7 +618,7 @@ static String home = System.getProperty("user.home");
 	    }
 	    public static void main() {
         
-	    	final Gui_CommandCreator gui = new Gui_CommandCreator();
+	    	gui = new Gui_CommandCreator();
 	    	gui.setVisible(true);
 	    	gui.setSize(1250, 980);
                 gui.setTitle("ARSandbox start options");

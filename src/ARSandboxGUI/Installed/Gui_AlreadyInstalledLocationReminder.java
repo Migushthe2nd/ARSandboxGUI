@@ -1,7 +1,7 @@
 package ARSandboxGUI.Installed;
 
 public class Gui_AlreadyInstalledLocationReminder extends javax.swing.JFrame {
-
+    public static Gui_AlreadyInstalledLocationReminder gui;
     public Gui_AlreadyInstalledLocationReminder() {
         initComponents();
     }
@@ -58,13 +58,13 @@ public class Gui_AlreadyInstalledLocationReminder extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void OKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OKActionPerformed
-        ARSandboxGUI.Installed.Gui_CommandCreator.main();
+        ARSandboxGUI.Class_Main.AlreadyInstalledLocationReminderTOCommandCreator();
     }//GEN-LAST:event_OKActionPerformed
 
     public static void main() {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-            final Gui_AlreadyInstalledLocationReminder gui = new Gui_AlreadyInstalledLocationReminder();
+            gui = new Gui_AlreadyInstalledLocationReminder();
                 gui.setVisible(true);
                 gui.setTitle("");
                 gui.pack();
