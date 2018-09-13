@@ -1,5 +1,4 @@
-package ARSandboxGUI.AlreadyInstalled;
-import ARSandboxGUI.Class_RunSandboxCommand;
+package ARSandboxGUI.Installed;
 import ARSandboxGUI.NotInstalled.Gui_enterpasswd;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;

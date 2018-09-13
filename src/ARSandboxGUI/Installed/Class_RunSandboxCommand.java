@@ -1,6 +1,6 @@
-package ARSandboxGUI;
+package ARSandboxGUI.Installed;
 
-import ARSandboxGUI.AlreadyInstalled.Gui_run;
+import ARSandboxGUI.Installed.Gui_run;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
