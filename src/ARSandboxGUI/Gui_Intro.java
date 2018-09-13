@@ -78,7 +78,7 @@ public class Gui_Intro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void OldInstallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OldInstallActionPerformed
-        ARSandboxGUI.Installed.Gui_AlreadyInstalledLocationReminder.main(null);	
+        ARSandboxGUI.Class_Main.IntroTOAlreadyInstalledLocationReminder();
     }//GEN-LAST:event_OldInstallActionPerformed
 
     private void NewInstallStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_NewInstallStateChanged

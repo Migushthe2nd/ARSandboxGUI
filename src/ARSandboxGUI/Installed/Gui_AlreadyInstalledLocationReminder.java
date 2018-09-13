@@ -61,7 +61,7 @@ public class Gui_AlreadyInstalledLocationReminder extends javax.swing.JFrame {
         ARSandboxGUI.Installed.Gui_CommandCreator.main();
     }//GEN-LAST:event_OKActionPerformed
 
-    public static void main(String args[]) {
+    public static void main() {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
             final Gui_AlreadyInstalledLocationReminder gui = new Gui_AlreadyInstalledLocationReminder();
