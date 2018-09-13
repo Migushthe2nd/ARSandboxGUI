@@ -106,7 +106,7 @@ public class Gui_enterpasswd extends javax.swing.JFrame {
             public void run() {
             final Gui_enterpasswd gui = new Gui_enterpasswd();
                 gui.setVisible(true);
-                gui.setTitle("Password equired");
+                gui.setTitle("Password required");
                 gui.pack();
                 gui.setLocationRelativeTo(null);
                 gui.setDefaultCloseOperation(Gui_enterpasswd.EXIT_ON_CLOSE);
