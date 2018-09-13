@@ -85,13 +85,12 @@ public class Gui_installingLoading extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                final Gui_installingLoading gui_load = new Gui_installingLoading();
-                gui_load.setVisible(true);
-                gui_load.toFront();
-                gui_load.repaint();
-                gui_load.setTitle("Installation");
-                gui_load.setLocationRelativeTo(null);
-                
+                final Gui_installingLoading gui = new Gui_installingLoading();
+                gui.setVisible(true);
+                gui.setTitle("Installation");
+                gui.pack();
+                gui.setLocationRelativeTo(null);
+                gui.setDefaultCloseOperation(Gui_installingLoading.EXIT_ON_CLOSE);
             }
         });
     }

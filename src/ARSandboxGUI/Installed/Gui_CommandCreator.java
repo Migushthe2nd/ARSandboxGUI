@@ -621,13 +621,13 @@ static String home = System.getProperty("user.home");
 	    }
 	    public static void main() {
         
-	    	final Gui_CommandCreator gui_run = new Gui_CommandCreator();
-	    	gui_run.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    	gui_run.setVisible(true);
-	    	gui_run.setSize(1250, 980);
-                gui_run.setTitle("ARSandbox start options");
-                //gui_run.setBackground(new java.awt.Color(234, 241, 255));
-                //gui_run.pack();
+	    	final Gui_CommandCreator gui = new Gui_CommandCreator();
+	    	gui.setVisible(true);
+	    	gui.setSize(1250, 980);
+                gui.setTitle("ARSandbox start options");
+                gui.pack();
+                gui.setLocationRelativeTo(null);
+                gui.setDefaultCloseOperation(Gui_CommandCreator.EXIT_ON_CLOSE);
 
 	}
 }

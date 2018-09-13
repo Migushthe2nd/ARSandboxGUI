@@ -123,9 +123,12 @@ public class Gui_enterpasswd extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                final Gui_enterpasswd gui_passwd = new Gui_enterpasswd();
-                gui_passwd.setVisible(true);
-                gui_passwd.setTitle("Password equired");
+            final Gui_enterpasswd gui = new Gui_enterpasswd();
+                gui.setVisible(true);
+                gui.setTitle("Password equired");
+                gui.pack();
+                gui.setLocationRelativeTo(null);
+                gui.setDefaultCloseOperation(Gui_enterpasswd.EXIT_ON_CLOSE);
             }
         });
     }

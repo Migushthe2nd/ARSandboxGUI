@@ -115,9 +115,12 @@ public class Gui_install extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                final Gui_install gui_install = new Gui_install();
-                gui_install.setVisible(true);
-                gui_install.setTitle("ARSandbox installation");
+                final Gui_install gui = new Gui_install();
+                gui.setVisible(true);
+                gui.setTitle("ARSandbox installation");
+                gui.pack();
+                gui.setLocationRelativeTo(null);
+                gui.setDefaultCloseOperation(Gui_install.EXIT_ON_CLOSE);
             }
         });
     }

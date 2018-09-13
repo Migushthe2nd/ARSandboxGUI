@@ -86,7 +86,12 @@ public class Gui_AlreadyInstalledLocationReminder extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Gui_AlreadyInstalledLocationReminder().setVisible(true);
+            final Gui_AlreadyInstalledLocationReminder gui = new Gui_AlreadyInstalledLocationReminder();
+                gui.setVisible(true);
+                gui.setTitle("");
+                gui.pack();
+                gui.setLocationRelativeTo(null);
+                gui.setDefaultCloseOperation(Gui_AlreadyInstalledLocationReminder.EXIT_ON_CLOSE);
             }
         });
     }

@@ -109,11 +109,12 @@ public class Gui_guidepage extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-            final Gui_guidepage gui_guide = new Gui_guidepage();
-                gui_guide.setVisible(true);
-                gui_guide.setTitle("Configuration guide");
-                gui_guide.setLocationRelativeTo(null);
-                gui_guide.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            final Gui_guidepage gui = new Gui_guidepage();
+                gui.setVisible(true);
+                gui.setTitle("Configuration guide");
+                gui.pack();
+                gui.setLocationRelativeTo(null);
+                gui.setDefaultCloseOperation(Gui_guidepage.EXIT_ON_CLOSE);
             }
         });
     }
