@@ -92,7 +92,7 @@ public class Gui_Intro extends javax.swing.JFrame {
     public static void main() {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                final Gui_Intro gui = new Gui_Intro();
+                gui = new Gui_Intro();
                 gui.setVisible(true);
                 gui.setTitle("ARSandbox installation");
                 gui.pack();

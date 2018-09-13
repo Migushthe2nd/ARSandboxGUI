@@ -16,7 +16,7 @@ public class Gui_AlreadyInstalledLocationReminder extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        Text1.setText("Assuming you have ARSandbox installed in the default location: (/home/src),");
+        Text1.setText("Assuming you have ARSandbox installed in the default location (/home/src),");
 
         Text2.setText("the next window allows you to enable launch arguments");
 
@@ -36,20 +36,20 @@ public class Gui_AlreadyInstalledLocationReminder extends javax.swing.JFrame {
                 .addComponent(OK)
                 .addGap(28, 28, 28))
             .addGroup(layout.createSequentialGroup()
-                .addGap(61, 61, 61)
+                .addGap(60, 60, 60)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Text1)
                     .addComponent(Text2))
-                .addContainerGap(66, Short.MAX_VALUE))
+                .addContainerGap(60, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(47, 47, 47)
+                .addGap(54, 54, 54)
                 .addComponent(Text1)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Text2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addComponent(OK)
                 .addContainerGap())
         );

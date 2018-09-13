@@ -30,23 +30,23 @@
               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="Text1" min="-2" max="-2" attributes="0"/>
                   <Component id="Text2" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="66" max="32767" attributes="0"/>
+              <EmptySpace pref="60" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
               <Component id="Text1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="Text2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="23" max="32767" attributes="0"/>
+              <EmptySpace pref="28" max="32767" attributes="0"/>
               <Component id="OK" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -56,7 +56,7 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="Text1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Assuming you have ARSandbox installed in the default location: (/home/src),"/>
+        <Property name="text" type="java.lang.String" value="Assuming you have ARSandbox installed in the default location (/home/src),"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="Text2">
