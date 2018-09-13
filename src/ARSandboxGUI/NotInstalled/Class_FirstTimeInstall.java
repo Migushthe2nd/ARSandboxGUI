@@ -1,5 +1,6 @@
-package ARSandboxGUI;
+package ARSandboxGUI.NotInstalled;
 
+import ARSandboxGUI.NotInstalled.Gui_enterpasswd;
 import java.awt.event.WindowEvent;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ARSandboxGUI;
+package ARSandboxGUI.NotInstalled;
 
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
@@ -110,7 +110,7 @@ public class Gui_enterpasswd extends javax.swing.JFrame {
             else 
             {
             try {
-                ARSandboxGUI.Class_FirstTimeInstall.main();
+                ARSandboxGUI.NotInstalled.Class_FirstTimeInstall.main();
             } catch (InterruptedException ex) {
                 Logger.getLogger(Gui_enterpasswd.class.getName()).log(Level.SEVERE, null, ex);
             }

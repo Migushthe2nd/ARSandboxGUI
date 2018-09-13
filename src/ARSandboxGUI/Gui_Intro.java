@@ -12,24 +12,24 @@ import java.util.concurrent.TimeUnit;
  *
  * @author gast
  */
-public class Gui_FirstTimeOpening {
+public class Gui_Intro {
     static String home = System.getProperty("user.home");
     public static void main(String[] args) {
         //Checking if options.txt exist to prevent the 'Firt time opening' pop-up from popping up
         File f = new File(home + "/.ARSandboxTool/options.txt");
         if(f.exists() && !f.isDirectory()) 
         { 
-            ARSandboxGUI.Gui_run.main();
+            ARSandboxGUI.AlreadyInstalled.Gui_run.main();
         }   
         else
         {
-            ARSandboxGUI.Gui_install.main();
+            ARSandboxGUI.NotInstalled.Gui_install.main();
         }
     }
     
     public static void startinstalling() throws InterruptedException {
-        ARSandboxGUI.Gui_installingLoading.main(null);
+        ARSandboxGUI.NotInstalled.Gui_installingLoading.main(null);
         TimeUnit.SECONDS.sleep(2);
-        ARSandboxGUI.Class_FirstTimeInstall.main();
+        ARSandboxGUI.NotInstalled.Class_FirstTimeInstall.main();
     }   
 }

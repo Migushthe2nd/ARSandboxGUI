@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ARSandboxGUI;
+package ARSandboxGUI.NotInstalled;
 
 /**
  *
@@ -43,7 +43,7 @@ public class Gui_installingLoading extends javax.swing.JFrame {
         Text2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         Text2.setText("Please be patient");
 
-        LoadingGIF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sandboxar/assets/loading_bar.gif"))); // NOI18N
+        LoadingGIF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ARSandboxGUI/assets/loading_bar.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

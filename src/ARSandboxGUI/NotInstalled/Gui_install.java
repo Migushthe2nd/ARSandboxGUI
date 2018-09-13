@@ -1,4 +1,4 @@
-package ARSandboxGUI;
+package ARSandboxGUI.NotInstalled;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -98,7 +98,7 @@ public class Gui_install extends javax.swing.JFrame {
 
     private void OldInstallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OldInstallActionPerformed
         // TODO add your handling code here:
-        ARSandboxGUI.Gui_AlreadyInstalledLocationReminder.main(null);
+        ARSandboxGUI.AlreadyInstalled.Gui_AlreadyInstalledLocationReminder.main(null);
     }//GEN-LAST:event_OldInstallActionPerformed
 
     private void NewInstallStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_NewInstallStateChanged
@@ -108,7 +108,7 @@ public class Gui_install extends javax.swing.JFrame {
     private void NewInstallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NewInstallActionPerformed
         // TODO add your handling code here:
         
-        ARSandboxGUI.Gui_enterpasswd.main();
+        ARSandboxGUI.NotInstalled.Gui_enterpasswd.main();
     }//GEN-LAST:event_NewInstallActionPerformed
 
     public static void main() {
