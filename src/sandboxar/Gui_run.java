@@ -768,7 +768,7 @@ static String home = System.getProperty("user.home");
 		}
 
 	    }
-	    public static void main(String[] args) throws InstantiationException, ClassNotFoundException, IllegalAccessException, UnsupportedLookAndFeelException{
+	    public static void main(String args[]) {
         
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
