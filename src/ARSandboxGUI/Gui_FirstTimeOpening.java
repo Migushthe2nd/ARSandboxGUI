@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
  *
  * @author gast
  */
-public class Gui {
+public class Gui_FirstTimeOpening {
     static String home = System.getProperty("user.home");
     public static void main(String[] args) {
         //Checking if options.txt exist to prevent the 'Firt time opening' pop-up from popping up
