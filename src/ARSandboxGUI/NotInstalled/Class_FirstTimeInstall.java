@@ -11,22 +11,17 @@ import java.util.concurrent.TimeUnit;
 import javax.swing.JOptionPane;
 
 public class Class_FirstTimeInstall {
-    static String passwd = Gui_enterpasswd.passwd;
+    static String passwd = Gui_EnterPasswd.passwd;
     static String home = System.getProperty("user.home");
     public static void main() throws InterruptedException {
 	    //String[] arg = new String[]{"-u root", "-h localhost"};
             System.out.println(passwd);
-        try {
+            try {
                 TimeUnit.SECONDS.sleep(2);
 	        String ss = null;
                 File dir = new File(home + "/.ARSandboxTool");
                 dir.mkdir();
                 File file = new File(home + "/.ARSandboxTool/run.sh");
-                if (file.createNewFile()){
-                System.out.println("File is created!");
-                }else{
-                System.out.println("File already exists?");
-                }
                 file.setExecutable(true, true);
                 //Write Content to run.sh
                 FileWriter writer = new FileWriter(file);
@@ -48,11 +43,6 @@ public class Class_FirstTimeInstall {
                 writer.close();
                 
                 File filee = new File(home + "/.ARSandboxTool/run2.sh");
-                if (filee.createNewFile()){
-                System.out.println("File is created!");
-                }else{
-                System.out.println("File already exists.");
-                }
                 filee.setExecutable(true, true);
                 //Write Content to run2.sh
                 FileWriter writerr = new FileWriter(filee);
@@ -62,11 +52,6 @@ public class Class_FirstTimeInstall {
                 
                 
                 File fileee = new File(home + "/.ARSandboxTool/run3.sh");
-                if (filee.createNewFile()){
-                System.out.println("File is created!");
-                }else{
-                System.out.println("File already exists.");
-                }
                 fileee.setExecutable(true, true);
                 //Write Content to run3.sh
                 FileWriter writerrr = new FileWriter(fileee);
