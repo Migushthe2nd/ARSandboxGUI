@@ -13,10 +13,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFrame;
 
-public class Gui_guidepage extends javax.swing.JFrame {
-    Gui_guidepage p;
+public class Gui_Guide extends javax.swing.JFrame {
+    Gui_Guide p;
 
-    public Gui_guidepage() {
+    public Gui_Guide() {
         initComponents();
     }
     
@@ -83,19 +83,19 @@ public class Gui_guidepage extends javax.swing.JFrame {
         try {
             java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
         } catch (IOException ex) {
-            Logger.getLogger(Gui_guidepage.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Gui_Guide.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_GuideHyperlinkActionPerformed
     
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-            final Gui_guidepage gui = new Gui_guidepage();
+            final Gui_Guide gui = new Gui_Guide();
                 gui.setVisible(true);
                 gui.setTitle("Configuration guide");
                 gui.pack();
                 gui.setLocationRelativeTo(null);
-                gui.setDefaultCloseOperation(Gui_guidepage.EXIT_ON_CLOSE);
+                gui.setDefaultCloseOperation(Gui_Guide.EXIT_ON_CLOSE);
             }
         });
     }
