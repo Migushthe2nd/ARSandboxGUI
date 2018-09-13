@@ -1,11 +1,11 @@
 package ARSandboxGUI;
-
 public class Gui_Intro extends javax.swing.JFrame {
-    
+    public static Gui_Intro gui;
         public Gui_Intro() {
         initComponents();
     }
-        
+ 
+                
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -92,7 +92,7 @@ public class Gui_Intro extends javax.swing.JFrame {
     public static void main() {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                final Gui_Intro gui = new Gui_Intro();
+                gui = new Gui_Intro();
                 gui.setVisible(true);
                 gui.setTitle("ARSandbox installation");
                 gui.pack();
@@ -101,8 +101,6 @@ public class Gui_Intro extends javax.swing.JFrame {
             }
         });
     }
-
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton NewInstall;

@@ -42,6 +42,7 @@ public class Class_RunSandboxCommand {
 	        String ss = null;
 	        String runcommand = home + "/src/SARndbox-2.3/bin/SARndbox" + " " + checkboxes + " " + textfields + " " + buttons;
                 runcommand = runcommand.replace("null", "");
+                runcommand = runcommand.replace(" ", "");
 	        System.out.println(runcommand);
 	        Process p = Runtime.getRuntime().exec(runcommand); //Change path to test error
 	        BufferedWriter writeer = new BufferedWriter(new OutputStreamWriter(p.getOutputStream()));
@@ -63,7 +64,7 @@ public class Class_RunSandboxCommand {
 	        System.out.println("FROM CATCH " + e.toString());
             JOptionPane.showMessageDialog(null,
             		//Waring message if launch not successful. More warnings to be implemented. 
-            		"Is de camera wel aangesloten? of anders" + System.lineSeparator() + "Error: " + e.toString(),
+            		"Is the camera connected?" + System.lineSeparator() + "Error: " + e.toString(),
             		"Error",
             		JOptionPane.WARNING_MESSAGE);
 	    }
