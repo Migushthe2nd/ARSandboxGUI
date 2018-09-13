@@ -1,7 +1,7 @@
 package ARSandboxGUI;
 public class Gui_Intro extends javax.swing.JFrame {
     public static Gui_Intro gui;
-        public Gui_Intro() {
+    public Gui_Intro() {
         initComponents();
     }
  
@@ -86,7 +86,7 @@ public class Gui_Intro extends javax.swing.JFrame {
     }//GEN-LAST:event_NewInstallStateChanged
 
     private void NewInstallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NewInstallActionPerformed
-        ARSandboxGUI.NotInstalled.Gui_enterpasswd.main();
+        ARSandboxGUI.Class_Main.IntroTOEnterPasswd();
     }//GEN-LAST:event_NewInstallActionPerformed
 
     public static void main() {
