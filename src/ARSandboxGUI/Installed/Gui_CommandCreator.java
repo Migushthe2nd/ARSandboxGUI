@@ -34,21 +34,21 @@ static String home = System.getProperty("user.home");
 //label	
 		L = new JLabel("<html><p>Enables elevation color mapping and loads the elevation color map from the file of the given name</p></html>");
 		add(L);	
-		CBuhm = new JCheckBox("uhm inschakelen");
+		CBuhm = new JCheckBox("custom uhm");
 		add(CBuhm);
-		CBuhm.setSelected(true);
+		CBuhm.setSelected(false);
 		TFuhm = new JTextField(home + "/src/SARndbox-2.3/etc/SARndbox-2.3/HeightColorMap.cpt");
 		add(TFuhm);
-		TFuhm.setEnabled(true);
+		TFuhm.setEnabled(false);
 		
 		L = new JLabel("<html><p>Fixes the navigation transformation so that Kinect camera and projector are aligned, as defined by the projector transform file of the given name</p></html>");
 		add(L);	
-		CBfpv = new JCheckBox("fpv optie");
+		CBfpv = new JCheckBox("custom fpv");
 		add(CBfpv);
-		CBfpv.setSelected(true);
+		CBfpv.setSelected(false);
 		TFfpv = new JTextField(home + "/src/SARndbox-2.3/etc/SARndbox-2.3/ProjectorMatrix.dat");
 		add(TFfpv);
-		TFfpv.setEnabled(true);
+		TFfpv.setEnabled(false);
 		
 		L = new JLabel("<html><p>Enables hill shading</p></html>");
 		add(L);	
