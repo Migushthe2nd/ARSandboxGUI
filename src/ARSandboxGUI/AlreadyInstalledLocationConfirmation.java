@@ -77,7 +77,7 @@ public class AlreadyInstalledLocationConfirmation extends javax.swing.JFrame {
 
     private void OKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OKActionPerformed
         // TODO add your handling code here:
-        ARSandboxGUI.Gui_install.main();
+        ARSandboxGUI.Gui_run.main();
     }//GEN-LAST:event_OKActionPerformed
 
     /**
