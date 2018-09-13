@@ -4,7 +4,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
-import java.io.File;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
@@ -26,26 +25,13 @@ static String home = System.getProperty("user.home");
 	JLabel E1, E2, E3, E4, E5, E6, E7, E8, L;
 	//uhm, Lfpv, Luhs, Lus, Lncl, Lrws, L, Lc, Lf, Ls, Lslf, Ler, Lhmp, Lnas, Lsp, Lhe, Lwts, Lws, Lrer, Lrs, Levr, Ldds, Lwi, Lwo, Lcp
 	JScrollPane pane;
-        
+@SuppressWarnings("empty-statement")
 	public Gui_CommandCreator() {
-
-//            File f = new File(home + "/.ARSandboxTool/options.txt");
-//            if(f.exists() && !f.isDirectory())
-//            { 
-//                
-//            }   
-//            else
-//            {
-//                File dir = new File(home + "/.ARSandboxTool");
-//                dir.mkdir();
-//                File file = new File(home + "/.ARSandboxTool/gui.properties");
-//                if (file.createNewFile()){
-//                System.out.println("File is created!");
-//                }else{
-//                System.out.println("File already exists?");
-//                }
-//            }
-       
+		setLayout(new GridLayout(26, 1, 0, 0));
+		//setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
+		//panel.setLayout(new GridLayout(20,1));
+		//panel.add(CBuhm); ??
+//label	
 		L = new JLabel("<html><p>Enables elevation color mapping and loads the elevation color map from the file of the given name</p></html>");
 		add(L);	
 		CBuhm = new JCheckBox("custom uhm");
@@ -637,7 +623,6 @@ static String home = System.getProperty("user.home");
                 gui.setTitle("ARSandbox start options");
                 gui.setLocationRelativeTo(null);
                 gui.setDefaultCloseOperation(Gui_CommandCreator.EXIT_ON_CLOSE);
-                gui.setLayout(new GridLayout(26, 1, 0, 0));
 
 	}
 }
