@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 import javax.swing.JOptionPane;
 
 public class Class_FirstTimeInstall {
-    static String passwd = Gui_enterpasswd.passwd;
+    static String passwd = Gui_EnterPasswd.passwd;
     static String home = System.getProperty("user.home");
     public static void main() throws InterruptedException {
 	    //String[] arg = new String[]{"-u root", "-h localhost"};
