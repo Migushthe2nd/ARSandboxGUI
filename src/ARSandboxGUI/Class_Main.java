@@ -17,7 +17,7 @@ public class Class_Main {
     }
     public static void IntroTOEnterPasswd() {
         ARSandboxGUI.Gui_Intro.gui.dispose();
-        ARSandboxGUI.NotInstalled.Gui_EnterPasswd.main();
+        ARSandboxGUI.NotInstalled.Gui_enterpasswd.main();
     }
     public static void IntroTOAlreadyInstalledLocationReminder() {
         ARSandboxGUI.Gui_Intro.gui.dispose();
