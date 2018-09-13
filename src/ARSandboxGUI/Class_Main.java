@@ -25,7 +25,7 @@ public class Class_Main {
     public static void EnterPasswdTOInstallingLoading() {
         ARSandboxGUI.NotInstalled.Gui_enterpasswd.gui.dispose();
                 try {
-                    //ARSandboxGUI.NotInstalled.Gui_installingLoading.main(); <-- not needed because the installation is almost instant
+                    ARSandboxGUI.NotInstalled.Gui_installingLoading.main();
                     ARSandboxGUI.NotInstalled.Class_FirstTimeInstall.main();
                 } catch (InterruptedException ex) {
                     Logger.getLogger(Gui_enterpasswd.class.getName()).log(Level.SEVERE, null, ex);

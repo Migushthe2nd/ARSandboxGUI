@@ -64,7 +64,7 @@ public class Class_FirstTimeInstall {
                 //String ss = null;
 	        //String command1 = "chmod +x " + home + "/.ARSandboxTool/run.sh";
 // Open the loading sreen because it is downloading the files now
-                ARSandboxGUI.NotInstalled.Gui_installingLoading.main();
+                //ARSandboxGUI.NotInstalled.Gui_installingLoading.main();
                 String command2 = home + "/.ARSandboxTool/run.sh";
                 
 	        System.out.println(command2);
@@ -134,7 +134,7 @@ public class Class_FirstTimeInstall {
 	        while ((ss = stdInputtttt.readLine()) != null) {
 	            System.out.println(ss);
 	        }
-	        System.out.println("Error (if any):\n");
+	        System.out.println("Errors (if any):\n");
 	        while ((ss = stdErrorrrrr.readLine()) != null) {
 	            System.out.println(ss);
 	            
