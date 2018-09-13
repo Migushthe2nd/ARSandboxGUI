@@ -1,6 +1,5 @@
 package ARSandboxGUI;
 import java.io.File;
-import java.util.concurrent.TimeUnit;
 
 public class Class_Main {
     static String home = System.getProperty("user.home");
@@ -14,12 +13,11 @@ public class Class_Main {
         else
         {
             ARSandboxGUI.Gui_Intro.main();
-        }
+        }        
+    }
+    public static void IntroTOEnterPasswd() {
+        ARSandboxGUI.Gui_Intro.gui.dispose();
+        ARSandboxGUI.NotInstalled.Gui_EnterPasswd.main();
     }
     
-    public static void startinstalling() throws InterruptedException {
-        ARSandboxGUI.NotInstalled.Gui_installingLoading.main(null);
-        TimeUnit.SECONDS.sleep(2);
-        ARSandboxGUI.NotInstalled.Class_FirstTimeInstall.main();
-    }   
 }
