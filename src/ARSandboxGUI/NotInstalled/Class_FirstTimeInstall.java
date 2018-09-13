@@ -1,7 +1,5 @@
 package ARSandboxGUI.NotInstalled;
 
-import ARSandboxGUI.NotInstalled.Gui_enterpasswd;
-import java.awt.event.WindowEvent;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -9,7 +7,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import static java.lang.Thread.sleep;
 import java.util.concurrent.TimeUnit;
 import javax.swing.JOptionPane;
 

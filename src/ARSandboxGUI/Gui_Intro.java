@@ -19,7 +19,7 @@ public class Gui_Intro {
         File f = new File(home + "/.ARSandboxTool/options.txt");
         if(f.exists() && !f.isDirectory()) 
         { 
-            ARSandboxGUI.Installed.Gui_run.main();
+            ARSandboxGUI.Installed.Gui_CommandCreator.main();
         }   
         else
         {
@@ -31,5 +31,6 @@ public class Gui_Intro {
         ARSandboxGUI.NotInstalled.Gui_installingLoading.main(null);
         TimeUnit.SECONDS.sleep(2);
         ARSandboxGUI.NotInstalled.Class_FirstTimeInstall.main();
+
     }   
 }
