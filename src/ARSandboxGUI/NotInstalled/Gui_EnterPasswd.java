@@ -5,9 +5,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
-public class Gui_EnterPasswd extends javax.swing.JFrame {
+public class Gui_enterpasswd extends javax.swing.JFrame {
     public static String passwd;
-    public Gui_EnterPasswd() {
+    public Gui_enterpasswd() {
         initComponents();
     }
 
@@ -94,7 +94,7 @@ public class Gui_EnterPasswd extends javax.swing.JFrame {
             try {
                 ARSandboxGUI.NotInstalled.Class_FirstTimeInstall.main();
             } catch (InterruptedException ex) {
-                Logger.getLogger(Gui_EnterPasswd.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Gui_enterpasswd.class.getName()).log(Level.SEVERE, null, ex);
             }
             }
 
@@ -104,12 +104,12 @@ public class Gui_EnterPasswd extends javax.swing.JFrame {
     public static void main() {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-            final Gui_EnterPasswd gui = new Gui_EnterPasswd();
+            final Gui_enterpasswd gui = new Gui_enterpasswd();
                 gui.setVisible(true);
                 gui.setTitle("Password required");
                 gui.pack();
                 gui.setLocationRelativeTo(null);
-                gui.setDefaultCloseOperation(Gui_EnterPasswd.EXIT_ON_CLOSE);
+                gui.setDefaultCloseOperation(Gui_enterpasswd.EXIT_ON_CLOSE);
             }
         });
     }
